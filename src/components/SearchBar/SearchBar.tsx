@@ -13,8 +13,8 @@ export default function SearchBar({ onSubmit }: SearchBarProps) {
     if (!trimmedQuery) {
       toast.error("Please enter your search query.", {
         duration: 2000,
+        position: "top-center",
       });
-      onSubmit("");
       return;
     }
     onSubmit(trimmedQuery);
