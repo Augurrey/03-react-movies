@@ -14,5 +14,5 @@ export default async function searchMovies(query: string): Promise<Movie[]> {
       Authorization: `Bearer ${token}`,
     },
   });
-  return response.data.results as Movie[];
+  return response.data.results;
 }
